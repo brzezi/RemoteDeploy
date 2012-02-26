@@ -12,22 +12,38 @@
     <repository name='http://repo.grails.org/grails/core' url='http://repo.grails.org/grails/core/' />
     <repository name='grailsCore' url='http://svn.codehaus.org/grails/trunk/grails-plugins' />
     <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+    <repository name='http://m2repo.spockframework.org/ext/' url='http://m2repo.spockframework.org/ext/' />
+    <repository name='http://m2repo.spockframework.org/snapshots/' url='http://m2repo.spockframework.org/snapshots/' />
   </repositories>
-  <dependencies />
-  <plugins>
+  <dependencies>
+    <compile>
+      <dependency group='org.codehaus.jackson' name='jackson-mapper-asl' version='latest.integration' />
+      <dependency group='org.codehaus.jackson' name='jackson-core-asl' version='latest.integration' />
+    </compile>
     <runtime>
-      <plugin group='org.grails.plugins' name='quartz-monitor' version='0.1' />
-      <plugin group='org.grails.plugins' name='resources' version='1.0.2' />
-      <plugin group='org.grails.plugins' name='jquery' version='1.6.1.1' />
-      <plugin group='org.grails.plugins' name='quartz' version='0.4.2' />
-      <plugin group='org.grails.plugins' name='localizations' version='1.4.1' />
-      <plugin group='org.grails.plugins' name='svn' version='1.0.0.M1' />
-      <plugin group='org.grails.plugins' name='settings' version='1.4' />
-      <plugin group='org.grails.plugins' name='tomcat' version='2.0.0' />
-      <plugin group='org.grails.plugins' name='jquery-ui' version='1.8.15' />
-      <plugin group='org.grails.plugins' name='hibernate-stats' version='1.1' />
-      <plugin group='org.grails.plugins' name='hibernate' version='2.0.0' />
+      <dependency group='postgresql' name='postgresql' version='latest.release' />
     </runtime>
+  </dependencies>
+  <plugins>
+    <compile>
+      <plugin group='org.grails.plugins' name='scoped-proxy' version='latest.integration' />
+      <plugin group='org.grails.plugins' name='localizations' version='latest.integration' />
+      <plugin group='org.grails.plugins' name='jquery' version='latest.integration' />
+      <plugin group='org.grails.plugins' name='twitter-bootstrap' version='1.4.0.14' />
+      <plugin group='org.grails.plugins' name='springcache' version='latest.integration' />
+      <plugin group='org.grails.plugins' name='hibernate' version='2.0.0' />
+      <plugin group='org.grails.plugins' name='resources' version='1.0.2' />
+      <plugin group='org.grails.plugins' name='spring-security-core' version='latest.integration' />
+      <plugin group='org.grails.plugins' name='hibernate-stats' version='latest.integration' />
+    </compile>
+    <runtime>
+      <plugin group='org.grails.plugins' name='svn' version='1.0.2' />
+      <plugin group='org.grails.plugins' name='webflow' version='2.0.0.RC1' />
+      <plugin group='org.grails.plugins' name='settings' version='1.4' />
+    </runtime>
+    <build>
+      <plugin group='org.grails.plugins' name='tomcat' version='2.0.0' />
+    </build>
   </plugins>
   <runtimePluginRequirements />
   <behavior />
