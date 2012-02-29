@@ -26,15 +26,15 @@
   </dependencies>
   <plugins>
     <compile>
-      <plugin group='org.grails.plugins' name='scoped-proxy' version='latest.integration' />
       <plugin group='org.grails.plugins' name='localizations' version='latest.integration' />
-      <plugin group='org.grails.plugins' name='jquery' version='latest.integration' />
-      <plugin group='org.grails.plugins' name='twitter-bootstrap' version='1.4.0.14' />
-      <plugin group='org.grails.plugins' name='springcache' version='latest.integration' />
       <plugin group='org.grails.plugins' name='hibernate' version='2.0.0' />
+      <plugin group='org.grails.plugins' name='twitter-bootstrap' version='1.4.0.14' />
       <plugin group='org.grails.plugins' name='resources' version='1.0.2' />
-      <plugin group='org.grails.plugins' name='spring-security-core' version='latest.integration' />
       <plugin group='org.grails.plugins' name='hibernate-stats' version='latest.integration' />
+      <plugin group='org.grails.plugins' name='scoped-proxy' version='latest.integration' />
+      <plugin group='org.grails.plugins' name='jquery' version='latest.integration' />
+      <plugin group='org.grails.plugins' name='springcache' version='latest.integration' />
+      <plugin group='org.grails.plugins' name='spring-security-core' version='latest.integration' />
     </compile>
     <runtime>
       <plugin group='org.grails.plugins' name='svn' version='1.0.2' />
